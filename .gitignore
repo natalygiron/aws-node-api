@@ -22,3 +22,5 @@ build/
 
 # IDEs and editors
 .vscode/
+
+api/undefined/temp/
