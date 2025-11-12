@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+.app { min-height: 100vh; display:flex; flex-direction:column; }
+.header { background: var(--primary); color: white; padding: 16px; }
+.container { padding: 20px; flex:1; max-width:1100px; margin: 0 auto; }
+.footer { padding: 12px; text-align:center; color:var(--muted); }
+
+.toolbar { display:flex; gap: 8px; margin-bottom: 12px; }
+.btn { background: var(--primary); color: white; border: none; padding: 8px 12px; border-radius: 8px; cursor:pointer; }
+.btn:hover { opacity: 0.95; }
+.btn-secondary { background: transparent; color: var(--text); border: 1px solid #ddd; }
+.btn-link { background: transparent; color: var(--accent); border: none; text-decoration: underline; cursor: pointer; }
+.btn-danger { background: var(--danger); }
+
+.card { background: var(--surface); border-radius: var(--radius); padding: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); margin-bottom: 12px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.form label { display:block; margin-bottom: 8px; }
+.form input, .form textarea { width:100%; padding:8px; border-radius:6px; border:1px solid #e6e6e6; margin-top:6px; }
+.actions { display:flex; gap:8px; justify-content:flex-end; margin-top:12px; }
+.loader { padding: 24px; text-align:center; }
+
+.meta { display:flex; justify-content:space-between; align-items:center; margin-top:6px; color:var(--muted); }
+.muted { color:var(--muted); }
